@@ -1,0 +1,131 @@
+
+
+
+
+.container    {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.container div  {
+    display: grid;
+    padding: 40px;
+    align-items: center;
+
+}
+
+
+p   {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 0px 0px 30px 0;
+    font-size: 15px;
+    font-family: 'Lexend Deca', serif;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+
+img {
+    display: flex;   
+    align-content: center;
+}
+
+
+h1  {
+    color: hsl(0, 0%, 95%);
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display',serif;
+}
+
+.btn   {
+    background: hsl(0, 0%, 95%);
+    width: 130px;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 2px solid hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', serif;
+    font-size: 15px;
+}
+
+
+
+
+.sedan  {
+    height: 400px;
+    width: 200px;
+    background-color:  hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.sedan .btn {
+    color: hsl(31, 77%, 52%);
+    
+    }
+
+.sedan .btn:hover {
+    background: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.suv    {
+    height: 400px;
+    width: 200px;
+    background-color:hsl(184, 100%, 22%);
+
+}
+
+.suv .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.suv .btn:hover {
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.lux    {
+    height: 400px;
+    width: 200px;
+    background-color:hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+    
+}
+
+
+.lux .btn   {
+    color: hsl(179, 100%, 13%);
+}
+
+.lux .btn:hover {
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media(max-width: 640px){
+    .container  {
+        flex-direction: column;
+    }
+
+    .sedan  {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .lux    {
+        border-radius: 0 0 10px 10px;
+    }
+}
